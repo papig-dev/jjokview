@@ -50,7 +50,7 @@
 - UI 문자열은 `String(localized:)` + `Resources/Localizable.xcstrings`(en 원문, ko 번역). 새 문자열 추가 시 ko도 채울 것.
 
 - 새 버전 알림(`App/UpdateChecker.swift`): 하루 한 번 GitHub `releases/latest`의 tag(`v0.1.0` 형식)만 읽고 다운로드 페이지를 연다.
-  자동 설치 없음(Sparkle은 나중에). App Store판(번들에 `_MASReceipt`)이면 메뉴·설정·확인 모두 꺼진다. 네트워크 권한은 이것 때문.
+  자동 설치는 하지 않는다(Sparkle 안 씀). App Store판(번들에 `_MASReceipt`)이면 메뉴·설정·확인 모두 꺼진다. 네트워크 권한은 이것 때문.
   릴리스 태그는 반드시 `v<MARKETING_VERSION>`, draft/prerelease는 무시된다.
 - 배포: `scripts/release.sh`(Developer ID 서명 → DMG → 공증 → 스테이플). `adhoc` 인자는 이 맥 확인용.
 
@@ -80,4 +80,4 @@
 
 ## 남은 일
 - unrar 소스 번들(암호 RAR, 분할 RAR), libarchive 3.8.x 번들(현재 시스템 3.7.4를 헤더 직접 선언으로 링크)
-- Sparkle(자동 설치), Metal CI 커널
+- Metal CI 커널. (Sparkle 자동 설치는 하지 않기로 함 — 새 버전 알림 + 다운로드 페이지로 충분, 기능 우선. 2026-09-27)
