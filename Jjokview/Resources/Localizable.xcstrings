@@ -1,0 +1,2432 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "%@ is a system shortcut and can’t be used.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 는 시스템 단축키라 쓸 수 없습니다."
+          }
+        }
+      }
+    },
+    "%@ was moved from “%@”.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ 단축키를 “%2$@”에서 옮겼습니다."
+          }
+        }
+      }
+    },
+    "%lld s": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld초"
+          }
+        }
+      }
+    },
+    "%lld%%": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld%%"
+          }
+        }
+      }
+    },
+    "(left half)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(왼쪽 반)"
+          }
+        }
+      }
+    },
+    "(right half)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(오른쪽 반)"
+          }
+        }
+      }
+    },
+    "AI Upscale": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AI 업스케일"
+          }
+        }
+      }
+    },
+    "AI upscale is ready": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AI 업스케일을 쓸 수 있습니다"
+          }
+        }
+      }
+    },
+    "About %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 정보"
+          }
+        }
+      }
+    },
+    "Actual Size": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "원본 크기"
+          }
+        }
+      }
+    },
+    "Add": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "추가"
+          }
+        }
+      }
+    },
+    "Add a shortcut": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "단축키 추가"
+          }
+        }
+      }
+    },
+    "Add or Remove Bookmark": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "북마크 추가/삭제"
+          }
+        }
+      }
+    },
+    "Add or remove a bookmark on this page (B, ⌘D)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 쪽에 북마크 추가/삭제 (B, ⌘D)"
+          }
+        }
+      }
+    },
+    "Adjust Strength…": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "강도 조절…"
+          }
+        }
+      }
+    },
+    "Allow Access": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "접근 허용"
+          }
+        }
+      }
+    },
+    "Allow Folder Access…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "폴더 접근 허용(다음 권 열기)…"
+          }
+        }
+      }
+    },
+    "Allow access to this folder to move between volumes with [ and ].": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "[ 와 ] 로 권을 넘기려면 이 폴더에 대한 접근을 허용하세요."
+          }
+        }
+      }
+    },
+    "Arrow keys follow the reading direction (← is next in right-to-left books)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "화살표 키가 읽기 방향을 따름 (오른쪽→왼쪽 책에서는 ←가 다음 쪽)"
+          }
+        }
+      }
+    },
+    "Auto Advance": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 넘기기"
+          }
+        }
+      }
+    },
+    "Auto Advance Faster": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 넘기기 빠르게"
+          }
+        }
+      }
+    },
+    "Auto Advance Slower": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 넘기기 느리게"
+          }
+        }
+      }
+    },
+    "Auto advance (P) · , slower · . faster — in vertical scroll the page flows continuously": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 넘기기 (P) · , 느리게 · . 빠르게 — 세로 스크롤에서는 계속 흘러갑니다"
+          }
+        }
+      }
+    },
+    "Auto advance every %@ seconds": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@초마다 자동 넘기기"
+          }
+        }
+      }
+    },
+    "Auto advance reached the end": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "끝까지 넘겼습니다. 자동 넘기기를 멈춥니다"
+          }
+        }
+      }
+    },
+    "Auto advance stopped": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 넘기기를 멈췄습니다"
+          }
+        }
+      }
+    },
+    "Auto advance · every %@ · , slower . faster · Space stop": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 넘기기 · %@마다 · , 느리게 . 빠르게 · 스페이스로 멈춤"
+          }
+        }
+      }
+    },
+    "Auto advance: every %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 넘기기: %@마다"
+          }
+        }
+      }
+    },
+    "Auto scroll speed: %lld pt/s": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 스크롤 속도: 초당 %lldpt"
+          }
+        }
+      }
+    },
+    "Auto scroll · %lld pt/s · , slower . faster · Space stop": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 스크롤 · 초당 %lldpt · , 느리게 . 빠르게 · 스페이스로 멈춤"
+          }
+        }
+      }
+    },
+    "Automatic": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동"
+          }
+        }
+      }
+    },
+    "Back 10 Pages": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10쪽 뒤로"
+          }
+        }
+      }
+    },
+    "Bookmark": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "북마크"
+          }
+        }
+      }
+    },
+    "Bookmarked page %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@쪽을 북마크했습니다"
+          }
+        }
+      }
+    },
+    "Bookmarks": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "북마크"
+          }
+        }
+      }
+    },
+    "Bring All to Front": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모두 앞으로 가져오기"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "취소"
+          }
+        }
+      }
+    },
+    "Change Sharpening": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "선명도 보정 단계 바꾸기"
+          }
+        }
+      }
+    },
+    "Check for Updates…": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트 확인…"
+          }
+        }
+      }
+    },
+    "Check for new versions automatically (once a day)": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새 버전을 자동으로 확인(하루 한 번)"
+          }
+        }
+      }
+    },
+    "Check your internet connection and try again.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "인터넷 연결을 확인한 뒤 다시 시도해 주세요."
+          }
+        }
+      }
+    },
+    "Chinese Simplified (GBK)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "중국어 간체 (GBK)"
+          }
+        }
+      }
+    },
+    "Chinese Traditional (Big5)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "중국어 번체 (Big5)"
+          }
+        }
+      }
+    },
+    "Choose a comic archive (ZIP, CBZ, RAR, CBR, 7Z) or a folder of images.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "만화 압축파일(ZIP, CBZ, RAR, CBR, 7Z)이나 이미지 폴더를 고르세요."
+          }
+        }
+      }
+    },
+    "Click": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "클릭"
+          }
+        }
+      }
+    },
+    "Click the left or right side to turn pages": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "화면 왼쪽·오른쪽을 눌러 넘기기"
+          }
+        }
+      }
+    },
+    "Close": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "닫기"
+          }
+        }
+      }
+    },
+    "Continue Reading": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이어보기"
+          }
+        }
+      }
+    },
+    "Continue to the next volume at the end": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "권 끝에서 다음 권으로 이어서"
+          }
+        }
+      }
+    },
+    "Copy": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "복사"
+          }
+        }
+      }
+    },
+    "Could not open": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "열 수 없습니다"
+          }
+        }
+      }
+    },
+    "Could not open the archive (%@).": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "압축파일을 열 수 없습니다 (%@)."
+          }
+        }
+      }
+    },
+    "Couldn’t check for updates": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트를 확인하지 못했습니다"
+          }
+        }
+      }
+    },
+    "Current page (⌘L or G to jump)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "현재 쪽 (⌘L 또는 G로 이동)"
+          }
+        }
+      }
+    },
+    "Cut": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오려두기"
+          }
+        }
+      }
+    },
+    "Defaults for new books": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새 책의 기본값"
+          }
+        }
+      }
+    },
+    "Delete": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "삭제"
+          }
+        }
+      }
+    },
+    "Delete All": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전체 삭제"
+          }
+        }
+      }
+    },
+    "Delete All Bookmarks in This Book…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 책의 북마크 전체 삭제…"
+          }
+        }
+      }
+    },
+    "Delete all bookmarks in this book": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 책의 북마크 전체 삭제"
+          }
+        }
+      }
+    },
+    "Delete all bookmarks in this book?": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 책의 북마크를 모두 삭제할까요?"
+          }
+        }
+      }
+    },
+    "Direction": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "읽기 방향"
+          }
+        }
+      }
+    },
+    "Don’t turn pages": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "넘기지 않음"
+          }
+        }
+      }
+    },
+    "Downloading the AI upscale model… Sharp Text is used until it’s ready.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AI 업스케일 모델을 받는 중입니다… 준비될 때까지 글씨 선명으로 보여줍니다."
+          }
+        }
+      }
+    },
+    "Drag to move a zoomed page. In right-to-left books the left side is next; in vertical view, the lower half scrolls down.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "확대한 쪽은 끌어서 옮깁니다. 오른쪽→왼쪽 책은 왼쪽이 다음이고, 세로 보기는 아래쪽을 누르면 내려갑니다."
+          }
+        }
+      }
+    },
+    "Drop a comic archive or folder here": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "만화 압축파일이나 폴더를 여기에 끌어다 놓으세요"
+          }
+        }
+      }
+    },
+    "Each series remembers its own layout and direction. These defaults apply to series you open for the first time.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시리즈마다 보기 방식과 읽기 방향을 따로 기억합니다. 이 기본값은 처음 여는 시리즈에 적용됩니다."
+          }
+        }
+      }
+    },
+    "Edit": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "편집"
+          }
+        }
+      }
+    },
+    "Edit Note": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "메모 편집"
+          }
+        }
+      }
+    },
+    "Enter Full Screen": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전체 화면 시작"
+          }
+        }
+      }
+    },
+    "Enter a page number (1–%lld).": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "쪽 번호를 입력하세요 (1–%lld)."
+          }
+        }
+      }
+    },
+    "Every %lld seconds": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld초마다"
+          }
+        }
+      }
+    },
+    "Exit Full Screen": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전체 화면 종료"
+          }
+        }
+      }
+    },
+    "Faster": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "빠르게"
+          }
+        }
+      }
+    },
+    "File": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "파일"
+          }
+        }
+      }
+    },
+    "Filename Encoding": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "파일명 인코딩"
+          }
+        }
+      }
+    },
+    "First Page": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "첫 쪽"
+          }
+        }
+      }
+    },
+    "First page · Press again for “%@”": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "첫 쪽 · 한 번 더 넘기면 “%@”(으)로"
+          }
+        }
+      }
+    },
+    "First page · Press again to allow folder access and open the previous volume": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "첫 쪽 · 한 번 더 넘기면 폴더 접근을 허용하고 이전 권을 엽니다"
+          }
+        }
+      }
+    },
+    "Fit Height": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "높이 맞춤"
+          }
+        }
+      }
+    },
+    "Fit Width": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "폭 맞춤"
+          }
+        }
+      }
+    },
+    "Fit to Window": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "화면에 맞춤"
+          }
+        }
+      }
+    },
+    "Flow at normal speed": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "보통 속도로 흐르기"
+          }
+        }
+      }
+    },
+    "Flow quickly": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "빠르게 흐르기"
+          }
+        }
+      }
+    },
+    "Flow slowly": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "느리게 흐르기"
+          }
+        }
+      }
+    },
+    "Folder access allowed. Use [ and ] to change volumes.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "폴더 접근을 허용했습니다. [ 와 ] 로 권을 넘기세요."
+          }
+        }
+      }
+    },
+    "Forward 10 Pages": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10쪽 앞으로"
+          }
+        }
+      }
+    },
+    "General": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "일반"
+          }
+        }
+      }
+    },
+    "Go": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이동"
+          }
+        }
+      }
+    },
+    "Go to Page": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "쪽 이동"
+          }
+        }
+      }
+    },
+    "Go to Page…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "쪽 이동…"
+          }
+        }
+      }
+    },
+    "Help": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "도움말"
+          }
+        }
+      }
+    },
+    "Hide %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 가리기"
+          }
+        }
+      }
+    },
+    "Hide Others": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기타 가리기"
+          }
+        }
+      }
+    },
+    "In single-page view, split two-page scans into single pages (S)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한쪽 보기에서 두 쪽짜리 스캔을 한쪽씩 나눠 보기 (S)"
+          }
+        }
+      }
+    },
+    "Japanese (Shift_JIS)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "일본어 (Shift_JIS)"
+          }
+        }
+      }
+    },
+    "Jjokview %@ is available": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "쪽뷰 %@ 버전이 나왔습니다"
+          }
+        }
+      }
+    },
+    "Jjokview is up to date": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "최신 버전을 쓰고 있습니다"
+          }
+        }
+      }
+    },
+    "Keyboard": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "키보드"
+          }
+        }
+      }
+    },
+    "Keyboard Shortcuts…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "키보드 단축키…"
+          }
+        }
+      }
+    },
+    "Korean (CP949)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한국어 (CP949)"
+          }
+        }
+      }
+    },
+    "Last Page": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "마지막 쪽"
+          }
+        }
+      }
+    },
+    "Last page · Press again for “%@”": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "마지막 쪽 · 한 번 더 넘기면 “%@”(으)로"
+          }
+        }
+      }
+    },
+    "Last page · Press again to allow folder access and open the next volume": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "마지막 쪽 · 한 번 더 넘기면 폴더 접근을 허용하고 다음 권을 엽니다"
+          }
+        }
+      }
+    },
+    "Later": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "나중에"
+          }
+        }
+      }
+    },
+    "Layout": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "보기 방식"
+          }
+        }
+      }
+    },
+    "Left button next, right button previous (Honeyview)": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "왼쪽 버튼 다음, 오른쪽 버튼 이전(꿀뷰식)"
+          }
+        }
+      }
+    },
+    "Left to Right": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "왼쪽→오른쪽"
+          }
+        }
+      }
+    },
+    "Left→Right": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "왼쪽→오른쪽"
+          }
+        }
+      }
+    },
+    "Licenses": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오픈소스 고지"
+          }
+        }
+      }
+    },
+    "Minimize": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "최소화"
+          }
+        }
+      }
+    },
+    "Mouse": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "마우스"
+          }
+        }
+      }
+    },
+    "New Window": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새 창"
+          }
+        }
+      }
+    },
+    "Next Bookmark": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다음 북마크"
+          }
+        }
+      }
+    },
+    "Next Page": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다음 쪽"
+          }
+        }
+      }
+    },
+    "Next Volume": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다음 권"
+          }
+        }
+      }
+    },
+    "Next volume (] or ⌘])": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다음 권 (] 또는 ⌘])"
+          }
+        }
+      }
+    },
+    "No Recent Books": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "최근 본 책 없음"
+          }
+        }
+      }
+    },
+    "No book open": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "열린 책이 없습니다"
+          }
+        }
+      }
+    },
+    "No bookmarks": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "북마크가 없습니다"
+          }
+        }
+      }
+    },
+    "No images were found.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이미지를 찾지 못했습니다."
+          }
+        }
+      }
+    },
+    "Note": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "메모"
+          }
+        }
+      }
+    },
+    "Off": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "끄기"
+          }
+        }
+      }
+    },
+    "Open Download Page": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다운로드 페이지 열기"
+          }
+        }
+      }
+    },
+    "Open Recent": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "최근 항목 열기"
+          }
+        }
+      }
+    },
+    "Open…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "열기…"
+          }
+        }
+      }
+    },
+    "Other": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기타"
+          }
+        }
+      }
+    },
+    "Page": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "쪽"
+          }
+        }
+      }
+    },
+    "Pages": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "쪽 이동"
+          }
+        }
+      }
+    },
+    "Password-protected archives are not supported yet.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "암호가 걸린 압축파일은 아직 지원하지 않습니다."
+          }
+        }
+      }
+    },
+    "Password-protected pages are not supported yet.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "암호가 걸린 쪽은 아직 지원하지 않습니다."
+          }
+        }
+      }
+    },
+    "Paste": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "붙여넣기"
+          }
+        }
+      }
+    },
+    "Press B or ⌘D to bookmark the current page.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "B 또는 ⌘D를 누르면 지금 쪽이 북마크됩니다."
+          }
+        }
+      }
+    },
+    "Press a key…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "키를 누르세요…"
+          }
+        }
+      }
+    },
+    "Previous Bookmark": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이전 북마크"
+          }
+        }
+      }
+    },
+    "Previous Page": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이전 쪽"
+          }
+        }
+      }
+    },
+    "Previous Volume": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이전 권"
+          }
+        }
+      }
+    },
+    "Previous volume ([ or ⌘[)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이전 권 ([ 또는 ⌘[)"
+          }
+        }
+      }
+    },
+    "Quit %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 종료"
+          }
+        }
+      }
+    },
+    "Read left to right": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "왼쪽에서 오른쪽으로 읽기"
+          }
+        }
+      }
+    },
+    "Read right to left, like Japanese manga (2 switches)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오른쪽에서 왼쪽으로 읽기 — 일본 만화 방식 (2로 전환)"
+          }
+        }
+      }
+    },
+    "Reading direction": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "읽기 방향"
+          }
+        }
+      }
+    },
+    "Reading left to right": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "왼쪽에서 오른쪽으로 읽습니다"
+          }
+        }
+      }
+    },
+    "Reading right to left": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오른쪽에서 왼쪽으로 읽습니다"
+          }
+        }
+      }
+    },
+    "Redo": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "실행 복귀"
+          }
+        }
+      }
+    },
+    "Remove": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "삭제"
+          }
+        }
+      }
+    },
+    "Remove from List": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "목록에서 제거"
+          }
+        }
+      }
+    },
+    "Remove this shortcut": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 단축키 삭제"
+          }
+        }
+      }
+    },
+    "Removed bookmark on page %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@쪽 북마크를 삭제했습니다"
+          }
+        }
+      }
+    },
+    "Reset": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "초기화"
+          }
+        }
+      }
+    },
+    "Restore Defaults": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기본값 복원"
+          }
+        }
+      }
+    },
+    "Restore the default shortcuts for this action": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 동작의 기본 단축키로 되돌리기"
+          }
+        }
+      }
+    },
+    "Resuming from page %lld · ⌘↑ to start over": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld쪽부터 이어봅니다 · 처음부터는 ⌘↑"
+          }
+        }
+      }
+    },
+    "Right to Left (manga)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오른쪽→왼쪽 (만화)"
+          }
+        }
+      }
+    },
+    "Right→Left": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오른쪽→왼쪽"
+          }
+        }
+      }
+    },
+    "Select All": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전체 선택"
+          }
+        }
+      }
+    },
+    "Services": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "서비스"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설정"
+          }
+        }
+      }
+    },
+    "Settings…": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설정…"
+          }
+        }
+      }
+    },
+    "Sharp Art": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "그림 선명"
+          }
+        }
+      }
+    },
+    "Sharp Text": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "글씨 선명"
+          }
+        }
+      }
+    },
+    "Sharp Text darkens ink and whitens paper. Sharp Art crisps lines without white halos and keeps screentones. AI Upscale enlarges small scans with Apple’s on-device AI, then applies Sharp Text.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "글씨 선명은 잉크를 진하게, 종이를 하얗게 합니다. 그림 선명은 흰 테두리 없이 선을 또렷하게 하고 스크린톤을 지킵니다. AI 업스케일은 작은 스캔을 맥에 내장된 AI로 키운 뒤 글씨 선명을 적용합니다."
+          }
+        }
+      }
+    },
+    "Sharpen": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "선명도"
+          }
+        }
+      }
+    },
+    "Sharpen Strength": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "선명도 강도"
+          }
+        }
+      }
+    },
+    "Sharpen blurry scans (E)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "흐린 스캔본 선명도 (E)"
+          }
+        }
+      }
+    },
+    "Sharpen: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "선명도: %@"
+          }
+        }
+      }
+    },
+    "Shift Spread by One Page": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한 장 밀기"
+          }
+        }
+      }
+    },
+    "Shortcuts": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "단축키"
+          }
+        }
+      }
+    },
+    "Show All": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모두 보기"
+          }
+        }
+      }
+    },
+    "Show Bookmarks": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "북마크 보기"
+          }
+        }
+      }
+    },
+    "Show Cover Alone": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "표지 단독 보기"
+          }
+        }
+      }
+    },
+    "Show or Hide Sidebar": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사이드바 보기/가리기"
+          }
+        }
+      }
+    },
+    "Show the cover alone in two-page view": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "두쪽 보기에서 표지를 단독으로 보기"
+          }
+        }
+      }
+    },
+    "Single Page": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한쪽 보기"
+          }
+        }
+      }
+    },
+    "Single Page (⌘1) — two-page scans are split into single pages (S to turn off)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한쪽 보기 (⌘1) — 두 쪽짜리 스캔은 한쪽씩 나눠 보여줍니다 (S로 끄기)"
+          }
+        }
+      }
+    },
+    "Single/two-page view: next page every %lld s": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한쪽·두쪽 보기: %lld초마다 다음 쪽"
+          }
+        }
+      }
+    },
+    "Skip This Version": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 버전 건너뛰기"
+          }
+        }
+      }
+    },
+    "Slower": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "느리게"
+          }
+        }
+      }
+    },
+    "Split Two-Page Scans": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한쪽씩 나누기"
+          }
+        }
+      }
+    },
+    "Splitting works in single-page view (⌘1)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한쪽씩 나누기는 한쪽 보기(⌘1)에서 쓸 수 있습니다"
+          }
+        }
+      }
+    },
+    "Start or Stop Auto Advance": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 넘기기 시작/멈춤"
+          }
+        }
+      }
+    },
+    "Switch Layout": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "보기 방식 바꾸기"
+          }
+        }
+      }
+    },
+    "Switch Reading Direction": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "읽기 방향 바꾸기"
+          }
+        }
+      }
+    },
+    "The archive is damaged (%@).": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "압축파일이 손상되었습니다 (%@)."
+          }
+        }
+      }
+    },
+    "The file could not be found. It may have been moved or deleted.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "파일을 찾을 수 없습니다. 옮겨졌거나 삭제되었을 수 있습니다."
+          }
+        }
+      }
+    },
+    "The page could not be extracted.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 쪽을 풀지 못했습니다."
+          }
+        }
+      }
+    },
+    "The page may have moved.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "쪽 위치가 바뀌었을 수 있습니다."
+          }
+        }
+      }
+    },
+    "The page may have moved. Opened the nearest page.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "쪽 위치가 바뀌었을 수 있어 가장 가까운 쪽을 열었습니다."
+          }
+        }
+      }
+    },
+    "There is no next volume.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다음 권이 없습니다."
+          }
+        }
+      }
+    },
+    "There is no previous volume.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이전 권이 없습니다."
+          }
+        }
+      }
+    },
+    "This archive was damaged. Recovered pages are shown.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "손상된 압축파일입니다. 복구한 쪽을 보여줍니다."
+          }
+        }
+      }
+    },
+    "This cannot be undone.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "되돌릴 수 없습니다."
+          }
+        }
+      }
+    },
+    "This file is not a ZIP archive.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ZIP 압축파일이 아닙니다."
+          }
+        }
+      }
+    },
+    "This file type is not supported.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지원하지 않는 파일 형식입니다."
+          }
+        }
+      }
+    },
+    "This is the first page.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "첫 쪽입니다."
+          }
+        }
+      }
+    },
+    "This is the last page.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "마지막 쪽입니다."
+          }
+        }
+      }
+    },
+    "This page is too large to open.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 쪽은 너무 커서 열 수 없습니다."
+          }
+        }
+      }
+    },
+    "To use [ and ] for other volumes in this folder, press ] to allow folder access": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "같은 폴더의 다른 권을 [ ] 로 보려면 ] 를 눌러 폴더 접근을 허용하세요"
+          }
+        }
+      }
+    },
+    "Two Pages": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "두쪽 보기"
+          }
+        }
+      }
+    },
+    "Two Pages (⌘2)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "두쪽 보기 (⌘2)"
+          }
+        }
+      }
+    },
+    "Two Pages, Left to Right": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "두쪽 보기, 왼쪽→오른쪽"
+          }
+        }
+      }
+    },
+    "Two Pages, Right to Left": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "두쪽 보기, 오른쪽→왼쪽"
+          }
+        }
+      }
+    },
+    "Two-page scans are shown whole": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "두 쪽짜리 스캔을 한 장으로 봅니다"
+          }
+        }
+      }
+    },
+    "Two-page scans are split into single pages": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "두 쪽짜리 스캔을 한쪽씩 나눠 봅니다"
+          }
+        }
+      }
+    },
+    "Undo": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "실행 취소"
+          }
+        }
+      }
+    },
+    "Unsupported compression method (%u).": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지원하지 않는 압축 방식입니다 (%u)."
+          }
+        }
+      }
+    },
+    "Updates": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트"
+          }
+        }
+      }
+    },
+    "Version %@ is the latest version.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 버전이 최신입니다."
+          }
+        }
+      }
+    },
+    "Vertical Scroll": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "세로 스크롤"
+          }
+        }
+      }
+    },
+    "Vertical Scroll for webtoons (⌘3)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "웹툰용 세로 스크롤 (⌘3)"
+          }
+        }
+      }
+    },
+    "Vertical scroll (webtoon) speed": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "세로 스크롤(웹툰) 속도"
+          }
+        }
+      }
+    },
+    "Vertical scroll (webtoon): flows at %lld pt/s": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "세로 스크롤(웹툰): 초당 %lldpt로 흐르기"
+          }
+        }
+      }
+    },
+    "View": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "보기"
+          }
+        }
+      }
+    },
+    "Volume": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "권"
+          }
+        }
+      }
+    },
+    "Volumes": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "권 이동"
+          }
+        }
+      }
+    },
+    "Window": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "윈도우"
+          }
+        }
+      }
+    },
+    "You have %@.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지금 쓰는 버전은 %@입니다."
+          }
+        }
+      }
+    },
+    "ZIP · CBZ · RAR · CBR · 7Z · folders": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ZIP · CBZ · RAR · CBR · 7Z · 폴더"
+          }
+        }
+      }
+    },
+    "Zoom": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "확대/축소"
+          }
+        }
+      }
+    },
+    "Zoom In": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "확대"
+          }
+        }
+      }
+    },
+    "Zoom Out": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "축소"
+          }
+        }
+      }
+    },
+    "Zoom: 9 fit to window · 8 fit width · 0 actual size · ⌘+ / ⌘− zoom": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "확대/축소: 9 화면에 맞춤 · 8 폭 맞춤 · 0 원본 · ⌘+ / ⌘− 확대·축소"
+          }
+        }
+      }
+    },
+    "p. %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld쪽"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

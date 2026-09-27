@@ -1,0 +1,8 @@
+build/
+*.xcodeproj/
+.DS_Store
+xcuserdata/
+
+# 로컬 전용: 개인 샘플 파일명·경로가 들어 있음
+ANALYSIS.md
+research/
