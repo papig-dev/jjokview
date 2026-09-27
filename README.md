@@ -12,7 +12,7 @@ A comic and webtoon viewer for macOS. Opens archives and folders directly, witho
 ## 기능
 
 **열기**
-- ZIP·CBZ·RAR·CBR·7Z·CB7과 이미지 폴더. 압축 안에 권별 압축이 들어 있는 모음 파일도 그대로 엽니다.
+- ZIP·CBZ·RAR·CBR·7Z·CB7·TAR·CBT와 이미지 폴더. 압축 안에 권별 압축이 들어 있는 모음 파일도 그대로 엽니다.
 - 목록만 먼저 읽어서 첫 쪽이 바로 뜹니다. 손상된 zip은 읽을 수 있는 데까지 엽니다.
 - 암호가 걸린 압축과 여러 개로 나뉜 RAR(part1, part2…)은 아직 열지 못합니다.
 - 한글 파일명: CP949(확장 완성형 포함)·Shift_JIS·GBK·Big5·UTF-8을 자동으로 판별합니다.
@@ -24,6 +24,8 @@ A comic and webtoon viewer for macOS. Opens archives and folders directly, witho
 - 한쪽 보기에서는 두 쪽이 붙은 스캔을 읽는 순서대로 나눠 보여줍니다(S로 켜고 끔).
 - 표지 단독 보기, 화면·폭·높이 맞춤, 확대
 - 시리즈마다 보기 설정을 기억하고, 권 끝에서 다음 권으로 이어집니다.
+- 쪽 이동: 화면 아래쪽에 마우스를 가져가면 쪽 막대가 나타나고, 끌면 썸네일을 미리 보여줍니다.
+  사이드바의 "쪽 목록"에서 썸네일로 고를 수도 있습니다. 오른쪽 클릭 메뉴로 자주 쓰는 설정을 바로 바꿉니다.
 - 마우스: 화면 왼쪽·오른쪽을 클릭해 넘깁니다(오른쪽→왼쪽 책은 왼쪽이 다음, 세로 보기는 아래쪽이 다음).
   꿀뷰식(왼쪽 버튼 다음, 오른쪽 버튼 이전)도 설정에서 고를 수 있습니다. 확대한 쪽은 끌어서 옮깁니다.
 
@@ -107,7 +109,7 @@ MIT. 앱 아이콘도 이 프로젝트에서 직접 만든 것으로 같은 라�
 ## English
 
 **Open**
-- ZIP, CBZ, RAR, CBR, 7Z, CB7, and image folders, including archives that contain one archive per volume.
+- ZIP, CBZ, RAR, CBR, 7Z, CB7, TAR, CBT, and image folders, including archives that contain one archive per volume.
 - Only the index is read up front, so the first page appears right away. Damaged ZIPs open as far as they can be read.
 - Password-protected archives and multi-part RAR files are not supported yet.
 - Filename encoding is detected automatically: CP949 (Korean), Shift_JIS, GBK, Big5, and UTF-8.
@@ -119,6 +121,8 @@ MIT. 앱 아이콘도 이 프로젝트에서 직접 만든 것으로 같은 라�
 - In single-page view, two-page scans are split in reading order. Toggle with S.
 - Cover shown alone, fit to window, width, or height, and zoom.
 - Settings are remembered per series, and reading continues into the next volume.
+- Page navigation: move the pointer to the bottom of the window to show a page slider, which previews a thumbnail as you drag.
+  You can also pick a page from the thumbnails in the sidebar's Page List, and right-click for common settings.
 - Mouse: click the left or right side to turn pages. In right-to-left books the left side is next, and in vertical view the lower half is next.
   Honeyview-style clicks (left button next, right button previous) are available in Settings. Drag to move a zoomed page.
 

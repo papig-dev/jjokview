@@ -244,9 +244,11 @@ final class SpreadScrollView: NSScrollView {
         }
     }
 
+    /// 꿀뷰식 클릭이면 이전 쪽, 아니면 오른쪽 클릭 메뉴.
     override func rightMouseDown(with event: NSEvent) {
-        guard ClickMode.current == .buttons, let c = controller, c.hasBook else { super.rightMouseDown(with: event); return }
-        c.clickTurn?(false)
+        guard let c = controller, c.hasBook else { super.rightMouseDown(with: event); return }
+        if ClickMode.current == .buttons { c.clickTurn?(false); return }
+        if let menu = c.contextMenu?() { NSMenu.popUpContextMenu(menu, with: event, for: self) }
     }
 
     // MARK: - 휠·트랙패드 넘김

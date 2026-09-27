@@ -64,6 +64,7 @@ final class ReaderWindowController: NSWindowController, NSWindowDelegate, NSTool
 
         reader = ReaderViewController(controller: controller)
         window.reader = reader
+        controller.contextMenu = { [weak self] in self?.contextMenu() ?? NSMenu() }
         let sidebarVC = NSHostingController(rootView: BookmarksSidebar(controller: controller))
         sidebarVC.sizingOptions = []   // SwiftUI가 창 크기를 정하지 않게 한다(0×0 창 버그의 원인)
         sidebarItem = NSSplitViewItem(sidebarWithViewController: sidebarVC)
@@ -325,6 +326,40 @@ final class ReaderWindowController: NSWindowController, NSWindowDelegate, NSTool
 
     @objc func openDocument(_ sender: Any?) { reader.showOpenPanel() }
 
+    @objc func setSharpenLevel(_ sender: NSMenuItem) {
+        if let raw = sender.representedObject as? String, let l = SharpenLevel(rawValue: raw) { controller.setSharpen(l) }
+    }
+
+    /// 읽기 화면 오른쪽 클릭 메뉴. 항목은 메뉴 막대와 같은 동작(performKeyAction)이라 체크 표시·사용 가능 여부도 같다.
+    func contextMenu() -> NSMenu {
+        let menu = NSMenu()
+        func add(_ a: KeyAction) {
+            let mi = NSMenuItem(title: a.title, action: #selector(performKeyAction(_:)), keyEquivalent: "")
+            mi.representedObject = a
+            mi.target = self
+            menu.addItem(mi)
+        }
+        add(.toggleBookmark); add(.showBookmarks)
+        menu.addItem(.separator())
+        add(.layoutSingle); add(.layoutDouble); add(.layoutVertical)
+        add(.toggleDirection); add(.toggleSplit)
+        menu.addItem(.separator())
+        let sharpen = NSMenuItem(title: String(localized: "Sharpen"), action: nil, keyEquivalent: "")
+        sharpen.submenu = NSMenu()
+        for level in SharpenLevel.available {
+            let mi = NSMenuItem(title: level.title, action: #selector(setSharpenLevel(_:)), keyEquivalent: "")
+            mi.representedObject = level.rawValue
+            mi.target = self
+            mi.state = controller.settings.sharpen == level ? .on : .off
+            sharpen.submenu?.addItem(mi)
+        }
+        menu.addItem(sharpen)
+        add(.fitPage); add(.fitWidth); add(.fitOriginal)
+        menu.addItem(.separator())
+        add(.goToPage); add(.toggleAutoPlay); add(.toggleFullScreen)
+        return menu
+    }
+
     @objc func setEncoding(_ sender: NSMenuItem) {
         if let raw = sender.representedObject as? String, let e = NameEncoding(rawValue: raw) { controller.setEncoding(e) }
     }
@@ -349,6 +384,7 @@ final class ReaderWindowController: NSWindowController, NSWindowDelegate, NSTool
 
     func validateMenuItem(_ item: NSMenuItem) -> Bool {
         let c = controller
+        if item.action == #selector(setSharpenLevel(_:)) { return c.hasBook }
         if item.action == #selector(setEncoding(_:)) {
             let raw = item.representedObject as? String
             let current = c.record?.encoding ?? .automatic

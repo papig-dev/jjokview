@@ -67,6 +67,12 @@
   **NSClipView는 클릭을 스크롤 뷰로 넘기지 않는다** → `CenteringClipView`가 mouseDown/rightMouseDown을 전달(안 하면 쪽 바깥 빈 곳 클릭이 무시됨).
 - 이어보기·최근 메뉴는 `displayTitle`(확장자 없음) + `seriesName`(폴더/묶음 압축 이름)으로 같은 이름 권을 구분. 창 부제목 = 시리즈 · n / N.
 
+- 쪽 막대(`Reader/PageBar.swift`): 읽기 화면 아래 80pt에 마우스가 오면 표시, 2.5초 뒤 숨김. 끄는 동안 썸네일 미리보기, 놓으면 이동.
+  RTL은 layoutDirection으로 막대를 뒤집는다. step을 주면 눈금 점이 찍혀 쓰지 않는다. 숨었을 때·막대 위 빈 곳은 클릭을 아래로 넘긴다.
+- 사이드바 탭: 북마크 / 쪽 목록(`PageGrid`, 썸네일 격자). 오른쪽 클릭 메뉴는 `ReaderWindowController.contextMenu()`(꿀뷰식 클릭 모드에선 오른쪽 클릭 = 이전 쪽이라 메뉴 없음).
+- SwiftUI 화면 확인: 스크립트 `pagebar`(또는 `pagebar:drag`) → `snapbar:이름`, `sidebar` → `snapsidebar:이름`(cacheDisplay라 머티리얼은 흐리게 나옴),
+  오른쪽 클릭 메뉴는 `menu`(timings.txt에 항목·체크 기록).
+
 ## 검증 도구 (Debug 빌드 전용)
 `open --env JJOKVIEW_SCRIPT="wait:3;do:layoutDouble;snap:a;page:10;quit" -a build/dd/Build/Products/Debug/Jjokview.app <파일>`
 - 스냅샷·상태는 `~/Library/Containers/dev.papig.jjokview/Data/tmp/snapshots/`(`state.txt`에 쪽·설정·토스트, `timings.txt`에 보정 시간·업데이트 확인 결과)

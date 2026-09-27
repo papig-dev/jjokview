@@ -696,6 +696,16 @@
         }
       }
     },
+    "Drag to jump to a page": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "끌어서 원하는 쪽으로 이동"
+          }
+        }
+      }
+    },
     "Drag to move a zoomed page. In right-to-left books the left side is next; in vertical view, the lower half scrolls down.": {
       "localizations": {
         "ko": {
@@ -987,6 +997,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "쪽 이동…"
+          }
+        }
+      }
+    },
+    "Go to page %lld": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld쪽으로 가기"
           }
         }
       }
@@ -1388,6 +1408,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "쪽"
+          }
+        }
+      }
+    },
+    "Page List": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "쪽 목록"
           }
         }
       }
@@ -2361,13 +2391,12 @@
         }
       }
     },
-    "ZIP · CBZ · RAR · CBR · 7Z · folders": {
-      "extractionState": "manual",
+    "ZIP · CBZ · RAR · CBR · 7Z · TAR · folders": {
       "localizations": {
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "ZIP · CBZ · RAR · CBR · 7Z · 폴더"
+            "value": "ZIP · CBZ · RAR · CBR · 7Z · TAR · 폴더"
           }
         }
       }

@@ -1,7 +1,7 @@
 import SwiftUI
 
-/// 북마크 패널. 꿀뷰처럼 추가한 순서대로 쭉 보이고, 클릭하면 그 쪽으로 가고,
-/// 하나씩 지우거나 전체 삭제할 수 있다.
+/// 사이드바: 북마크 / 쪽 목록(썸네일) 탭.
+/// 북마크는 꿀뷰처럼 추가한 순서대로 쭉 보이고, 클릭하면 그 쪽으로 가고, 하나씩 지우거나 전체 삭제할 수 있다.
 struct BookmarksSidebar: View {
     @ObservedObject var controller: ReaderController
     @ObservedObject var store = LibraryStore.shared
@@ -9,19 +9,32 @@ struct BookmarksSidebar: View {
     @State private var confirmClearAll = false
     @State private var editing: UUID?
     @State private var noteDraft = ""
+    @AppStorage("sidebar.tab") private var tab = "bookmarks"
 
     var body: some View {
         VStack(spacing: 0) {
             if let book = controller.book {
                 header(book)
+                Picker(selection: $tab) {
+                    Text("Bookmarks").tag("bookmarks")
+                    Text("Page List").tag("pages")
+                } label: { EmptyView() }
+                .pickerStyle(.segmented)
+                .labelsHidden()
+                .padding(.horizontal, 12)
+                .padding(.bottom, 8)
                 Divider()
-                if controller.bookmarks.isEmpty {
-                    empty
+                if tab == "pages" {
+                    PageGrid(controller: controller, book: book)
                 } else {
-                    list(book)
+                    if controller.bookmarks.isEmpty {
+                        empty
+                    } else {
+                        list(book)
+                    }
+                    Divider()
+                    footer
                 }
-                Divider()
-                footer
             } else {
                 Text("No book open")
                     .foregroundStyle(.secondary)
@@ -152,5 +165,43 @@ struct BookmarkThumbnail: View {
     private func load() {
         guard let book = controller.book, book.pages.indices.contains(page) else { return }
         controller.pipeline.request(book, page: page, maxPixel: 160, sharpen: .off, priority: .low) { img in image = img }
+    }
+}
+
+/// 쪽 목록: 썸네일 격자. 누르면 그 쪽으로 가고, 지금 보는 쪽은 강조색 테두리.
+struct PageGrid: View {
+    @ObservedObject var controller: ReaderController
+    let book: Book
+
+    var body: some View {
+        let current = Set(controller.currentView.map(\.page))
+        ScrollViewReader { proxy in
+            ScrollView {
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 64, maximum: 96), spacing: 8)], spacing: 10) {
+                    ForEach(book.pages.indices, id: \.self) { i in
+                        VStack(spacing: 3) {
+                            BookmarkThumbnail(controller: controller, page: i)
+                                .aspectRatio(0.72, contentMode: .fit)
+                                .overlay(RoundedRectangle(cornerRadius: 3)
+                                    .stroke(current.contains(i) ? Color.accentColor : .clear, lineWidth: 2.5))
+                            Text(verbatim: "\(i + 1)").font(.caption2.monospacedDigit())
+                                .foregroundStyle(current.contains(i) ? Color.accentColor : .secondary)
+                        }
+                        .id(i)
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            controller.goToPage(i)
+                            controller.focusReader?()
+                        }
+                        .help(Text("Go to page \(i + 1)"))
+                    }
+                }
+                .padding(10)
+            }
+            .onAppear { proxy.scrollTo(controller.currentPage, anchor: .center) }
+            .onChange(of: controller.currentPage) { _, p in
+                withAnimation(.easeInOut(duration: 0.2)) { proxy.scrollTo(p, anchor: .center) }
+            }
+        }
     }
 }

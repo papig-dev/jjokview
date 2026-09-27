@@ -9,6 +9,8 @@ final class ReaderViewController: NSViewController {
     private let spread = SpreadScrollView(frame: .zero)
     private let strip = StripScrollView(frame: .zero)
     private var overlay: PassthroughHostingView<ReaderOverlay>!
+    let pageBarModel = PageBarModel()
+    private(set) var pageBarView: NSView?
     private var bag = Set<AnyCancellable>()
     private var lastLayout: PageLayout?
     private var lastBook: String?
@@ -54,6 +56,33 @@ final class ReaderViewController: NSViewController {
             overlay.bottomAnchor.constraint(equalTo: root.bottomAnchor),
         ])
         overlay.passThrough = { [weak self] in self?.controller.hasBook ?? false }
+
+        // 쪽 막대(아래 가운데). 숨어 있을 때는 클릭이 아래 읽기 화면으로 그대로 간다.
+        let bar = PassthroughHostingView(rootView: PageBar(controller: controller, model: pageBarModel))
+        bar.sizingOptions = []
+        bar.translatesAutoresizingMaskIntoConstraints = false
+        root.addSubview(bar)
+        NSLayoutConstraint.activate([
+            bar.centerXAnchor.constraint(equalTo: root.centerXAnchor),
+            bar.widthAnchor.constraint(equalTo: root.widthAnchor, constant: -32).withPriority(.defaultHigh),
+            bar.widthAnchor.constraint(lessThanOrEqualToConstant: 560),
+            bar.bottomAnchor.constraint(equalTo: root.bottomAnchor),
+            bar.heightAnchor.constraint(equalToConstant: 210),
+        ])
+        pageBarView = bar
+        bar.passThrough = { [weak self] in
+            guard let m = self?.pageBarModel else { return true }
+            return !(m.visible || m.dragging)
+        }
+        // 끄는 중(썸네일 미리보기)이 아니면 아래 막대 부분(약 64pt)만 클릭을 받는다.
+        bar.passThroughAt = { [weak self] p in
+            guard let m = self?.pageBarModel, !m.dragging else { return false }
+            return p.y > 64
+        }
+        root.onMouseMoved = { [weak self] p in
+            guard let self, self.controller.hasBook, self.controller.pageCount > 1 else { return }
+            if p.y < 80 { self.pageBarModel.show() }   // 아래쪽 80pt에 마우스가 오면 쪽 막대
+        }
         controller.focusReader = { [weak self] in
             guard let self else { return }
             self.view.window?.makeFirstResponder(self.view)
@@ -288,7 +317,19 @@ final class ReaderViewController: NSViewController {
 /// 읽기 영역 맨 아래 뷰. 첫 응답자가 되어 키 입력을 창(ReaderWindow)으로 넘기고, 파일 끌어다 놓기를 받는다.
 final class KeyCatcherView: NSView {
     var onDrop: ((URL) -> Void)?
+    /// 마우스 위치(이 뷰 좌표, 아래가 0). 쪽 막대를 띄우는 데 쓴다.
+    var onMouseMoved: ((NSPoint) -> Void)?
     override var acceptsFirstResponder: Bool { true }
+
+    override func updateTrackingAreas() {
+        super.updateTrackingAreas()
+        trackingAreas.forEach(removeTrackingArea)
+        addTrackingArea(NSTrackingArea(rect: .zero, options: [.mouseMoved, .activeInKeyWindow, .inVisibleRect], owner: self))
+    }
+
+    override func mouseMoved(with event: NSEvent) {
+        onMouseMoved?(convert(event.locationInWindow, from: nil))
+    }
 
     override func mouseDown(with event: NSEvent) {
         window?.makeFirstResponder(self)
@@ -305,9 +346,19 @@ final class KeyCatcherView: NSView {
 }
 
 /// 책이 열려 있으면 마우스 입력을 아래 읽기 화면으로 넘긴다(토스트는 보이기만 한다).
+extension NSLayoutConstraint {
+    func withPriority(_ p: NSLayoutConstraint.Priority) -> NSLayoutConstraint { priority = p; return self }
+}
+
 final class PassthroughHostingView<Content: View>: NSHostingView<Content> {
     var passThrough: () -> Bool = { false }
-    override func hitTest(_ point: NSPoint) -> NSView? { passThrough() ? nil : super.hitTest(point) }
+    /// 이 위치(자기 좌표, 아래가 0)는 아래 뷰로 넘길지. 투명한 빈 곳이 읽기 화면 클릭을 가로채지 않게.
+    var passThroughAt: ((NSPoint) -> Bool)?
+    override func hitTest(_ point: NSPoint) -> NSView? {
+        if passThrough() { return nil }
+        if let f = passThroughAt, let sv = superview, f(convert(point, from: sv)) { return nil }
+        return super.hitTest(point)
+    }
 }
 
 /// 알림 토스트, 불러오는 중 표시, 책이 없을 때의 시작 화면.

@@ -13,7 +13,7 @@ struct WelcomeView: View {
                 .foregroundStyle(.secondary)
             Text("Drop a comic archive or folder here")
                 .font(.title3)
-            Text("ZIP · CBZ · RAR · CBR · 7Z · folders")
+            Text("ZIP · CBZ · RAR · CBR · 7Z · TAR · folders")
                 .font(.callout)
                 .foregroundStyle(.secondary)
             Button(action: open) {

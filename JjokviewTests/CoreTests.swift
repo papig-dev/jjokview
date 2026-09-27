@@ -189,6 +189,14 @@ final class CoreTests: XCTestCase {
         XCTAssertEqual(ImagePipeline.size(of: try book.pages[1].data()), CGSize(width: 40, height: 30))
     }
 
+    func testTarComic() throws {
+        let src = Bundle(for: Self.self).url(forResource: "pages", withExtension: "cbt")!
+        let url = try tmp("pages.cbt", Data(contentsOf: src))
+        let book = try BookLoader.load(.archive(url), cache: ArchiveCache())
+        XCTAssertEqual(book.pages.map(\.name), ["vol/01.png", "vol/02.png", "vol/10.png"])   // 자연 정렬
+        XCTAssertNotNil(ImagePipeline.size(of: try book.pages[2].data()))
+    }
+
     // MARK: 쪽 배치
 
     func testSplitWideFollowsDirection() {

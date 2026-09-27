@@ -41,6 +41,28 @@ enum DebugDriver {
                 NSApp.postEvent(make(right ? .rightMouseUp : .leftMouseUp), atStart: false)
                 w.sendEvent(make(right ? .rightMouseDown : .leftMouseDown))
             }
+        case "menu":   // 오른쪽 클릭 메뉴 항목과 체크·사용 가능 상태 기록
+            if let wc, let menu = wc.controller.contextMenu?() {
+                func dump(_ m: NSMenu, _ indent: String) -> [String] {
+                    m.items.flatMap { i -> [String] in
+                        if i.isSeparatorItem { return [indent + "---"] }
+                        let ok = wc.validateMenuItem(i)
+                        return [indent + i.title + (i.state == .on ? " ✓" : "") + (ok ? "" : " (off)")] + (i.submenu.map { dump($0, indent + "  ") } ?? [])
+                    }
+                }
+                ImagePipeline.debugLog("menu:\n" + dump(menu, "  ").joined(separator: "\n"))
+            }
+        case "pagebar":   // 쪽 막대 띄우기(드래그 중 미리보기는 pagebar:drag)
+            wc?.reader.pageBarModel.show()
+            if arg == "drag" { wc?.reader.pageBarModel.dragging = true }
+        case "snapbar", "snapsidebar":   // 쪽 막대 / 사이드바(SwiftUI)만 이미지로
+            let target = step[0] == "snapbar" ? wc?.reader.pageBarView : (wc?.window?.contentViewController as? NSSplitViewController)?.splitViewItems.first?.viewController.view
+            if let v = target, let rep = v.bitmapImageRepForCachingDisplay(in: v.bounds) {
+                v.cacheDisplay(in: v.bounds, to: rep)
+                let dir = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("snapshots", isDirectory: true)
+                try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
+                try? rep.representation(using: .png, properties: [:])?.write(to: dir.appendingPathComponent("\(arg.isEmpty ? "bar" : arg).png"))
+            }
         case "quit": NSApp.terminate(nil)
         default: NSLog("DebugDriver: unknown step \(step)")
         }

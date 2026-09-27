@@ -47,6 +47,8 @@
 				<string>dev.papig.jjokview.cbr</string>
 				<string>org.7-zip.7-zip-archive</string>
 				<string>dev.papig.jjokview.cb7</string>
+				<string>public.tar-archive</string>
+				<string>dev.papig.jjokview.cbt</string>
 			</array>
 		</dict>
 		<dict>
@@ -113,6 +115,16 @@
 			<array><string>public.data</string><string>public.archive</string></array>
 			<key>UTTypeTagSpecification</key>
 			<dict><key>public.filename-extension</key><array><string>cb7</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>dev.papig.jjokview.cbt</string>
+			<key>UTTypeDescription</key>
+			<string>Comic Book Archive (TAR)</string>
+			<key>UTTypeConformsTo</key>
+			<array><string>public.tar-archive</string></array>
+			<key>UTTypeTagSpecification</key>
+			<dict><key>public.filename-extension</key><array><string>cbt</string></array></dict>
 		</dict>
 	</array>
 </dict>

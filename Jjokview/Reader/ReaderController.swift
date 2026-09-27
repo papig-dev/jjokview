@@ -32,6 +32,8 @@ final class ReaderController: ObservableObject {
     var focusReader: (() -> Void)?
     /// 마우스 클릭 넘김. 키보드와 같은 경로(ReaderViewController.perform)를 타서 자동 넘기기 간격 재시작·권 끝 안내가 같다.
     var clickTurn: ((_ forward: Bool) -> Void)?
+    /// 오른쪽 클릭 메뉴(창 컨트롤러가 만든다).
+    var contextMenu: (() -> NSMenu)?
     private var toastWork: DispatchWorkItem?
     private var sizeGeneration = 0
     private var accessedURL: URL?
