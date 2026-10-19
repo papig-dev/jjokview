@@ -4,13 +4,14 @@ import SwiftUI
 final class PageBarModel: ObservableObject {
     @Published var visible = false
     @Published var dragging = false
+    var hovering = false   // 마우스가 막대 위에 있으면 숨기지 않는다(숨은 자리 클릭이 쪽 넘김이 되지 않게)
     private var hideWork: DispatchWorkItem?
 
     func show() {
         if !visible { visible = true }
         hideWork?.cancel()
         let w = DispatchWorkItem { [weak self] in
-            guard let self, !self.dragging else { return }
+            guard let self, !self.dragging, !self.hovering else { return }
             self.visible = false
         }
         hideWork = w
@@ -51,7 +52,8 @@ struct PageBar: View {
                     if editing {
                         model.show()
                     } else {
-                        controller.goToPage(target)
+                        // 클릭만 하고 놓으면 그대로 둔다(쪽 나누기 뒷 반쪽·세로 위치가 쪽 맨 앞으로 튀지 않게).
+                        if target != controller.currentPage { controller.goToPage(target) }
                         controller.focusReader?()
                         model.hideSoon()
                     }
@@ -61,6 +63,10 @@ struct PageBar: View {
             }
             .padding(.horizontal, 14).padding(.vertical, 8)
             .background(.regularMaterial, in: Capsule())
+            .onHover { inside in
+                model.hovering = inside
+                if !inside, shown { model.hideSoon() }   // 벗어나면 그때부터 다시 잰다
+            }
         }
         .frame(maxWidth: 560)
         .padding(.bottom, 14)

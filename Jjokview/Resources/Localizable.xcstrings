@@ -1006,7 +1006,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%lld쪽으로 가기"
+            "value": "%lld쪽으로 이동"
           }
         }
       }

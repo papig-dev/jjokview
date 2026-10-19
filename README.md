@@ -77,7 +77,7 @@ A comic and webtoon viewer for macOS. Opens archives and folders directly, witho
 ## 개인정보
 
 - 네트워크는 새 버전 확인에만 씁니다. 하루 한 번 GitHub 릴리스 페이지에 요청을 하나 보내 최신 버전 번호만 읽습니다.
-  이때 전달되는 것은 IP 주소와 앱 이름·버전(`Jjokview/0.1.0`)뿐입니다. 설정에서 끌 수 있습니다.
+  이때 전달되는 것은 IP 주소와 앱 이름·버전(`Jjokview/<버전>`)뿐입니다. 설정에서 끌 수 있습니다.
 - AI 업스케일을 처음 켜면 macOS가 시스템 AI 모델을 내려받습니다.
 - 샌드박스 앱이라, 사용자가 연 파일과 폴더만 읽기 전용으로 접근합니다.
 - 북마크와 읽은 위치는 이 맥 안에만 저장됩니다.
@@ -151,7 +151,7 @@ Each mode has its own strength setting, from 0 to 100%, in Settings.
 
 **Privacy**
 - The only network use is an update check. Once a day, the app sends a single request to the GitHub releases page and reads the latest version number.
-  GitHub sees only your IP address and the app name and version (`Jjokview/0.1.0`). You can turn this off in Settings.
+  GitHub sees only your IP address and the app name and version (`Jjokview/<version>`). You can turn this off in Settings.
 - macOS downloads its system AI model the first time you use AI Upscale.
 - It is sandboxed and reads only the files and folders you open.
 - Bookmarks and reading positions stay on your Mac.

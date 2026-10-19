@@ -150,6 +150,7 @@ struct BookmarkThumbnail: View {
     let controller: ReaderController
     let page: Int
     @State private var image: CGImage?
+    @State private var wanted: String?
 
     var body: some View {
         ZStack {
@@ -160,11 +161,18 @@ struct BookmarkThumbnail: View {
         }
         .onAppear(perform: load)
         .onChange(of: page) { _, _ in load() }
+        .onChange(of: controller.book?.cacheKey) { _, _ in load() }
     }
 
     private func load() {
-        guard let book = controller.book, book.pages.indices.contains(page) else { return }
-        controller.pipeline.request(book, page: page, maxPixel: 160, sharpen: .off, priority: .low) { img in image = img }
+        guard let book = controller.book, book.pages.indices.contains(page) else { image = nil; return }
+        // 늦게 도착한 이전 권·이전 쪽 결과가 덮어쓰지 않게, 마지막으로 요청한 것만 받는다.
+        let token = "\(book.cacheKey)#\(page)"
+        if wanted != token { image = nil }   // 다른 쪽 그림을 새 쪽 번호와 같이 보여주지 않는다
+        wanted = token
+        controller.pipeline.request(book, page: page, maxPixel: 160, sharpen: .off, priority: .low) { img in
+            if wanted == token { image = img }
+        }
     }
 }
 
@@ -198,6 +206,7 @@ struct PageGrid: View {
                 }
                 .padding(10)
             }
+            .id(book.cacheKey)   // 권이 바뀌면 셀(과 썸네일 @State)을 새로 만든다
             .onAppear { proxy.scrollTo(controller.currentPage, anchor: .center) }
             .onChange(of: controller.currentPage) { _, p in
                 withAnimation(.easeInOut(duration: 0.2)) { proxy.scrollTo(p, anchor: .center) }

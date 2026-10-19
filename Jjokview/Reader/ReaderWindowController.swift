@@ -30,7 +30,7 @@ final class ReaderWindow: NSWindow {
     }
 }
 
-final class ReaderWindowController: NSWindowController, NSWindowDelegate, NSToolbarDelegate {
+final class ReaderWindowController: NSWindowController, NSWindowDelegate, NSToolbarDelegate, NSMenuItemValidation {
     let controller = ReaderController()
     private let split = NSSplitViewController()
     private var sidebarItem: NSSplitViewItem!
@@ -110,7 +110,9 @@ final class ReaderWindowController: NSWindowController, NSWindowDelegate, NSTool
         sidebarItem.animator().isCollapsed.toggle()
     }
 
+    /// "북마크 보기": 마지막에 쪽 목록 탭을 봤더라도 북마크 탭으로 연다.
     func showSidebar() {
+        UserDefaults.standard.set("bookmarks", forKey: "sidebar.tab")
         if sidebarItem.isCollapsed { sidebarItem.animator().isCollapsed = false }
     }
 
